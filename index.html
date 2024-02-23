@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Cart Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h2>CRESTA STORE CART</h2>
+        <img src="emojis_pic.JPG" alt="Image" class="image">
+    </div>
+
+    <div class="Rectangle1">
+        <div class="freeshipping">
+            <h3><a href="javascript:void(0)" onclick="myFunction()">Get free shipping above Rs.2000..</a></h3>
+        </div>
+        
+        <div class="savedlater">
+            <h3><a href="javascript:void(0)" onclick="myFunction()">Saved for later,Items(3)</a> </h3>
+        </div>
+        
+        <div class="vertical-line"></div>
+        <div class="vertical-line2"></div>
+        <div class="Back">
+            <h3><a href="javascript:void(0)" onclick="myFunction()">Back to Shopping &#128722;</a></h3>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <h1></h1>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <img src="product2.JPG" alt="Image 1">
+        </div>
+        <div class="rec1">
+            <h4>MVMT</h4>
+            <h5>Rise Mini Analog Dial Women’s Watch -28000083-D</h5>
+            <h2>&#8377;7,459</h2>
+            <h6>M.R.P : &#8377;12,432(40% OFF) <hr class="line"</h6>
+            <p>In Stock.</p>
+            <h3>Quantity : </h3>
+            <div class="grid-container1">
+                <div class="grid-item1" onclick="decrementGrid1()">-</div>
+                <div class="grid-item1" id="number1">1</div>
+                <div class="grid-item1" onclick="incrementGrid1()">+</div>
+            </div>
+        </div>
+        <div class="cart-total1" id="total1">
+            <h3>Total : &#8377;</h3>
+        </div>
+    </div>
+
+    <div class="cart-container2">
+        <h1></h1>
+        <div class="cart-items1" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <img src="product3.JPG" alt="Image 2">
+        </div>
+        <div class="rec2">
+            <h4>Fashionhub</h4>
+            <h5>Leriya Fashion Western Dress</h5>
+            <h2>&#8377;359</h2>
+            <h6>M.R.P : &#8377;1,999(18% OFF) <hr class="line"</h6>
+            <p>In Stock.</p>
+            <h3> Quantity : </h3>
+            <div class="grid-container">
+                <div class="grid-item" onclick="decrement()">-</div>
+                <div class="grid-item" id="number">1</div>
+                <div class="grid-item" onclick="increment()">+</div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <h3>Total : &#8377;</h3>
+        </div>
+    </div>
+
+    <div class="subtotal">
+        <h2>Subtotal : &#8377;</h2>
+        <h3>EMI Available.Details</h3>
+        <div class="rectangle3">
+            <h3>Proceed to Buy(2 Items)</h3>
+        </div>
+    </div>
+
+    <div class="placeorder">
+        <button id="checkout-btn">Place Order</button>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
